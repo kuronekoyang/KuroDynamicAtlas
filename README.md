@@ -1,2 +1,2 @@
 # KuroDynamicAtlas
-High performance astc dynamic atlas for unity
+High performance ASTC Dynamic Atlas for unity
