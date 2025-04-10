@@ -1,2 +1,8 @@
 # KuroDynamicAtlas
-High performance ASTC Dynamic Atlas for unity
+Unity高性能ASTC动态图集方案
+
+在古代，人们只能在静态图集中使用压缩纹理，一旦到了动态图集，只能老老实实的使用RGBA32。
+
+后来随着科技发展，人们开始使用ComputeShader在运行时进行动态图集的压缩。不过再怎么优化压缩算法，这个计算开销是避不掉的。
+
+本方案对资产生产流程做了微小的一点改变，即可避免运行时的压缩计算开销。如果想兼容更广泛的机型，也可以轻松改成其他基于Block的压缩纹理方案。
