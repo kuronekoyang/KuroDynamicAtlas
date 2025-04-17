@@ -148,7 +148,9 @@ namespace kuro
                 if (x == xx && y == yy)
                     continue;
 
-                pixels[x + y * width] = pixels[xx + yy * width];
+                var c = pixels[xx + yy * width];
+                c.a = 0;
+                pixels[x + y * width] = c;
             }
         }
 
