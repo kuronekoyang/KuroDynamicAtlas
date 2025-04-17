@@ -1,0 +1,18 @@
+{
+    "name": "kuro.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f85ac8070e0325b4f99a0c2312382ce4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

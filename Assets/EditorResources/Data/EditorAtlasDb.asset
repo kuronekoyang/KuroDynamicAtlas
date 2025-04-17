@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8744861082752623901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: cocktail
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: cocktail
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &-3110593795643326841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: confetti-ball
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: confetti-ball
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856da50dc36242f09483c80e0b80d608, type: 3}
+  m_Name: EditorAtlasDb
+  m_EditorClassIdentifier: 
+  SpriteDataList:
+  - {fileID: 1178043515559524083}
+  - {fileID: 4733278746645387525}
+  - {fileID: 1730511012108765435}
+  - {fileID: 8325309943419388976}
+  - {fileID: -8744861082752623901}
+  - {fileID: -3110593795643326841}
+  - {fileID: 8166017360489731599}
+  - {fileID: 7971527167775113634}
+  - {fileID: 6790947026672643801}
+--- !u!114 &1178043515559524083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: beach
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: beach
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &1730511012108765435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: bungalow
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: bungalow
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &4733278746645387525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: boy
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: boy
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &6790947026672643801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: woman
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: woman
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &7971527167775113634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: sand-castle
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: sand-castle
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &8166017360489731599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: resort
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: resort
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
+--- !u!114 &8325309943419388976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: canoe
+  m_EditorClassIdentifier: 
+  SpriteData:
+    Id:
+      Name: canoe
+    SpriteData:
+      PixelsPerUnit: 100
+      Size: {x: 128, y: 128}
+      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
+      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
+      Border: {x: 0, y: 0, z: 0, w: 0}
+      IsRotated: 0
+      IsPacked: 1
