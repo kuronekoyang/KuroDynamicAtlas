@@ -68,13 +68,15 @@ namespace kuro
                 IOUtils.CreateParentDirectoryIfNotExists(destinationPath);
                 RunCommand(KAstcEncoderPath, $"-cl {tempPath.AddDoubleQuotation()} {destinationPath.AddDoubleQuotation()} {blockSize}x{blockSize} -thorough");
                 astcFileList.Add(destinationPath);
+                var astcAssetPath = IOUtils.GetRelativePath(UnityProjectPath, destinationPath);
+                MakeAstcReadable(astcAssetPath);
 
                 var dynamicAtlasData = new DynamicAtlasData();
                 atlasDb.DynamicAtlasList.Add(dynamicAtlasData);
-                dynamicAtlasData.TextureResource = IOUtils.GetRelativePath(UnityProjectPath, destinationPath);
+                dynamicAtlasData.TextureResource = astcAssetPath;
                 dynamicAtlasData.TextureWidth = newWidth;
                 dynamicAtlasData.TextureHeight = newHeight;
-                dynamicAtlasData.SpriteData.Id = new SpriteId(IOUtils.GetFileNameWithoutExtension(destinationPath));
+                dynamicAtlasData.SpriteData.Id = new SpriteId(IOUtils.GetFileNameWithoutExtension(astcAssetPath));
 
                 var frame = new Frame();
                 frame.frame = new Rect(Padding, Padding, width, height);
@@ -177,6 +179,15 @@ namespace kuro
             info.CreateNoWindow = true;
             var process = Process.Start(info);
             process?.WaitForExit();
+        }
+
+        private static void MakeAstcReadable(string path)
+        {
+            var importer = AssetImporter.GetAtPath(path) as IHVImageFormatImporter;
+            if (importer == null)
+                return;
+            importer.isReadable = true;
+            importer.SaveAndReimport();
         }
 
         public struct Frame
