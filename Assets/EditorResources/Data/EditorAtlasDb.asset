@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9092448653526000353
+--- !u!114 &-8754760519164850216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,69 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: resort
+  m_Name: woman
   m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: resort
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &-8787519061569513748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: canoe
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: canoe
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &-2543117947341883380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: sand-castle
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: sand-castle
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &-1818936671595641380
+  SpriteId:
+    Name: woman
+--- !u!114 &-8180916018120131561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,18 +26,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
   m_Name: cocktail
   m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: cocktail
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
+  SpriteId:
+    Name: cocktail
+--- !u!114 &-6093415340592863695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: sand-castle
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: sand-castle
+--- !u!114 &-6034621495937162644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: bungalow
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: bungalow
+--- !u!114 &-5990336094755073940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: canoe
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: canoe
+--- !u!114 &-4062854121496320871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: confetti-ball
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: confetti-ball
+--- !u!114 &-3958334867874189249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: boy
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: boy
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,16 +111,30 @@ MonoBehaviour:
   m_Name: EditorAtlasDb
   m_EditorClassIdentifier: 
   SpriteDataList:
-  - {fileID: 3039838062462863361}
-  - {fileID: 6693616160320171424}
-  - {fileID: 5646831803861482327}
-  - {fileID: -8787519061569513748}
-  - {fileID: -1818936671595641380}
-  - {fileID: 3374486184328498462}
-  - {fileID: -9092448653526000353}
-  - {fileID: -2543117947341883380}
-  - {fileID: 3134111274555892883}
---- !u!114 &3039838062462863361
+  - {fileID: 2145410152148040040}
+  - {fileID: -3958334867874189249}
+  - {fileID: -6034621495937162644}
+  - {fileID: -5990336094755073940}
+  - {fileID: -8180916018120131561}
+  - {fileID: -4062854121496320871}
+  - {fileID: 1632273162806278813}
+  - {fileID: -6093415340592863695}
+  - {fileID: -8754760519164850216}
+--- !u!114 &1632273162806278813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
+  m_Name: resort
+  m_EditorClassIdentifier: 
+  SpriteId:
+    Name: resort
+--- !u!114 &2145410152148040040
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,111 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
   m_Name: beach
   m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: beach
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &3134111274555892883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: woman
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: woman
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &3374486184328498462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: confetti-ball
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: confetti-ball
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &5646831803861482327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: bungalow
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: bungalow
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
---- !u!114 &6693616160320171424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7088d18160404758accbe8c5dae3a8c1, type: 3}
-  m_Name: boy
-  m_EditorClassIdentifier: 
-  SpriteData:
-    Id:
-      Name: boy
-    SpriteData:
-      PixelsPerUnit: 100
-      Size: {x: 128, y: 128}
-      PaddingFactor: {x: 0, y: 0, z: 1, w: 1}
-      Uv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      InnerUv: {x: 0.015151516, y: 0.015151501, z: 0.9848485, w: 0.9848485}
-      Border: {x: 0, y: 0, z: 0, w: 0}
-      IsRotated: 0
-      IsPacked: 1
+  SpriteId:
+    Name: beach

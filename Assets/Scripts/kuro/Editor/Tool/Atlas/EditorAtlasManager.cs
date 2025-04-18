@@ -76,7 +76,6 @@ namespace kuro
             GC.Collect();
         }
 
-        public static IReadOnlyList<EditorSpriteData> EditorSpriteDataList => Instance?._internal.Value.EditorSpriteDataList ?? Array.Empty<EditorSpriteData>();
         public static EditorSpriteData GetEditorSpriteData(SpriteId spriteId) => Instance?._internal.Value.GetEditorSpriteData(spriteId);
         public static KSprite GetSprite(SpriteId id) => Instance?._internal.Value.GetSprite(id) ?? KSprite.Empty;
         public static Texture2D GetThumbnail(SpriteId id) => Instance?._internal.Value.GetThumbnail(id) ?? Texture2D.whiteTexture;
@@ -95,37 +94,33 @@ namespace kuro
 
         private class Internal : ScriptableObject
         {
-            private readonly List<EditorSpriteData> _editorSpriteDataList = new();
             private readonly Dictionary<SpriteId, EditorSpriteData> _editorSpriteDataDictionary = new();
             private readonly Dictionary<SpriteId, KSprite> _spriteDictionary = new();
             private Dictionary<SpriteId, Texture2D> _thumbnailDictionary = null;
 
             public void Load()
             {
-                var atlasDb = AtlasManager.Instance?.AtlasDb;
-                if (atlasDb == null)
-                    return;
-
-                foreach (var atlasData in atlasDb.DynamicAtlasList)
+                var editorAtlasDb = AssetDatabase.LoadAssetAtPath<EditorAtlasDb>(EditorAtlasDbPath);
+                if (editorAtlasDb && editorAtlasDb.SpriteDataList != null)
                 {
-                    var spriteData = atlasData.SpriteData;
-                    var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(atlasData.TextureResource);
-                    var editorSpriteData = CreateInstance<EditorSpriteData>();
-                    editorSpriteData.name = spriteData.Id.Name;
-                    editorSpriteData.SpriteData = spriteData;
-                    _editorSpriteDataList.Add(editorSpriteData);
-                    _editorSpriteDataDictionary[spriteData.Id] = editorSpriteData;
-                    _spriteDictionary[spriteData.Id] = new KSprite(spriteData.SpriteData, texture);
+                    foreach (var editorSpriteData in editorAtlasDb.SpriteDataList)
+                        _editorSpriteDataDictionary[editorSpriteData.SpriteId] = editorSpriteData;
+                }
+
+                var atlasDb = AtlasManager.Instance?.AtlasDb;
+                if (atlasDb != null)
+                {
+                    foreach (var atlasData in atlasDb.DynamicAtlasList)
+                    {
+                        var spriteData = atlasData.SpriteData;
+                        var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(atlasData.TextureResource);
+                        _spriteDictionary[spriteData.Id] = new KSprite(spriteData.SpriteData, texture);
+                    }
                 }
             }
 
             public void Unload()
             {
-                foreach (var data in _editorSpriteDataList)
-                    if (data)
-                        DestroyImmediate(data);
-
-                _editorSpriteDataList.Clear();
                 _editorSpriteDataDictionary.Clear();
                 _spriteDictionary.Clear();
                 if (_thumbnailDictionary != null)
@@ -137,7 +132,6 @@ namespace kuro
                 }
             }
 
-            public IReadOnlyList<EditorSpriteData> EditorSpriteDataList => _editorSpriteDataList;
             public EditorSpriteData GetEditorSpriteData(SpriteId spriteId) => _editorSpriteDataDictionary.GetValueOrDefault(spriteId);
             public KSprite GetSprite(SpriteId id) => _spriteDictionary.GetValueOrDefault(id);
 

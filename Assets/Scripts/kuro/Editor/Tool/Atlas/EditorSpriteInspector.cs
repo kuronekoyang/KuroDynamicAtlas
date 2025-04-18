@@ -35,7 +35,7 @@ namespace kuro
             if (data == null)
                 return;
 
-            var texture = EditorAtlasManager.GetThumbnail(data.SpriteData.Id);
+            var texture = EditorAtlasManager.GetThumbnail(data.SpriteId);
             var frameSize = new Vector2(texture.width, texture.height);
             float zoomLevel = Mathf.Min(r.width / frameSize.x, r.height / frameSize.y);
             Rect wantedRect = new Rect(r.x, r.y, frameSize.x * zoomLevel, frameSize.y * zoomLevel);
@@ -51,7 +51,7 @@ namespace kuro
             if (data == null)
                 return "";
 
-            var spriteData = data.SpriteData.SpriteData;
+            var spriteData = EditorAtlasManager.GetSprite(data.SpriteId).Data;
             return string.Format(CultureInfo.InvariantCulture.NumberFormat, "({0}x{1}) ({2}, {3}, {4}, {5})",
                 (int)spriteData.Size.x, (int)spriteData.Size.y,
                 spriteData.Uv.x, spriteData.Uv.y, spriteData.Uv.z, spriteData.Uv.w);

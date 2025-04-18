@@ -15,8 +15,8 @@ namespace kuro
             if (newObject != obj)
             {
                 SpriteId newId;
-                if (newObject && newObject.SpriteData != null)
-                    newId = newObject.SpriteData.Id;
+                if (newObject)
+                    newId = newObject.SpriteId;
                 else
                     newId = default;
                 propertyName.stringValue = newId.Name ?? "";

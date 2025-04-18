@@ -4,6 +4,6 @@ namespace kuro
 {
     public class EditorSpriteData : ScriptableObject
     {
-        public AtlasSpriteData SpriteData;
+        public SpriteId SpriteId;
     }
 }

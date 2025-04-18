@@ -86,7 +86,7 @@ namespace kuro
 
                 var editorSpriteData = ScriptableObject.CreateInstance<EditorSpriteData>();
                 editorSpriteData.name = dynamicAtlasData.SpriteData.Id.Name;
-                editorSpriteData.SpriteData = dynamicAtlasData.SpriteData;
+                editorSpriteData.SpriteId = dynamicAtlasData.SpriteData.Id;
                 editorAtlasDb.SpriteDataList.Add(editorSpriteData);
                 AssetDatabase.AddObjectToAsset(editorSpriteData, editorAtlasDb);
             }
