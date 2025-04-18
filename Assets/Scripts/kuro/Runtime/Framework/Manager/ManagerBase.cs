@@ -15,7 +15,6 @@ namespace kuro
 #if UNITY_EDITOR
     public interface IEditorManager : IManager
     {
-        void OnEnteredEditMode();
     }
 #endif
 

@@ -21,17 +21,17 @@ namespace kuro
 
         protected abstract DynamicSprite.SpriteCallback ApplyDynamicSprite { get; }
 
-        protected void Awake()
+        protected virtual void Awake()
         {
             _dynamicSprite.Initialize(this, ApplyDynamicSprite);
         }
 
-        protected void OnDestroy()
+        protected virtual void OnDestroy()
         {
             _dynamicSprite.UnInitialize();
         }
 
-        protected void OnEnable()
+        protected virtual void OnEnable()
         {
 #if UNITY_EDITOR
             if (_isDynamicSpriteDirty && !Application.isPlaying)
@@ -43,7 +43,7 @@ namespace kuro
             _dynamicSprite.Enable();
         }
 
-        protected void OnDisable()
+        protected virtual void OnDisable()
         {
             _dynamicSprite.Disable();
         }

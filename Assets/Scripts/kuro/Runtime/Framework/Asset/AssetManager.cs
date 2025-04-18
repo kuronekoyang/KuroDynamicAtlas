@@ -34,11 +34,5 @@ namespace kuro
             throw new System.NotImplementedException();
 #endif
         }
-
-#if UNITY_EDITOR
-        void IEditorManager.OnEnteredEditMode()
-        {
-        }
-#endif
     }
 }

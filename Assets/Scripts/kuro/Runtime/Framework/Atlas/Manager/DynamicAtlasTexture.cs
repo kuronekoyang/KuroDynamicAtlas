@@ -56,9 +56,8 @@ namespace kuro
             _id = ++s_id;
             _packingAlgorithm = new ImagePackingBinaryTree(new Vector2Int(AtlasSize, AtlasSize), 0);
             _texture = new Texture2D(AtlasSize, AtlasSize, TextureFormat, false);
-#if UNITY_EDITOR
             _texture.hideFlags = HideFlags.DontSave;
-#endif
+
             if (EnableGraphicCopyTexture)
                 _texture.Apply(false, true);
         }

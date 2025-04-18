@@ -55,16 +55,5 @@ namespace kuro
             foreach (var manager in _updaterList)
                 manager.Update();
         }
-
-#if UNITY_EDITOR
-        public void OnEnteredEditMode()
-        {
-            foreach (var manager in _managerList)
-            {
-                if (manager is IEditorManager editorManager)
-                    editorManager.OnEnteredEditMode();
-            }
-        }
-#endif
     }
 }

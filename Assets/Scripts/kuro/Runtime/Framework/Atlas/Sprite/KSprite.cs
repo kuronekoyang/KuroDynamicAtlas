@@ -147,9 +147,6 @@ namespace kuro
                 new Vector2(0.5f, 0.5f),
                 100
             );
-#if UNITY_EDITOR
-            sprite.hideFlags = HideFlags.DontSave;
-#endif
             return sprite;
         }
     }

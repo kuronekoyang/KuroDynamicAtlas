@@ -11,6 +11,7 @@ namespace kuro
     public class DynamicSprite4Image : DynamicSpriteHookBase<Image>
     {
         private KSprite _lastSprite;
+        private Sprite _lastUnitySprite;
         private DynamicSprite.SpriteCallback _applyDynamicSprite;
 
         protected override DynamicSprite.SpriteCallback ApplyDynamicSprite
@@ -24,8 +25,18 @@ namespace kuro
                 if (_lastSprite == value)
                     return;
                 _lastSprite = value;
-                t.sprite = value.CreateUnitySprite();
+                _lastUnitySprite.SafeDestroy();
+                _lastUnitySprite = value.CreateUnitySprite();
+                if (_lastUnitySprite)
+                    _lastUnitySprite.hideFlags = HideFlags.DontSave;
+                t.sprite = _lastUnitySprite;
             };
+        }
+
+        protected override void OnDestroy()
+        {
+            _lastUnitySprite.SafeDestroy();
+            base.OnDestroy();
         }
     }
 }

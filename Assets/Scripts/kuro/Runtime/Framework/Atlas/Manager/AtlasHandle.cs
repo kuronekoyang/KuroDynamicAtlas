@@ -148,12 +148,6 @@ namespace kuro
                 UnloadResource();
         }
 
-        public void ReloadResourceIfNeeded()
-        {
-            if (_isNeeded)
-                LoadResourceAsync().Forget();
-        }
-
         public void Tick(float deltaTime)
         {
             var t = LifeTime;

@@ -32,7 +32,6 @@ namespace kuro
                 else if (playMode == PlayModeStateChange.EnteredEditMode)
                 {
                     s_isPlayingMode = false;
-                    s_app?.OnEnteredEditMode();
                 }
             };
         }

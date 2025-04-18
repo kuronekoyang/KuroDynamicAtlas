@@ -80,19 +80,6 @@ namespace kuro
             UnloadDb();
         }
 
-
-#if UNITY_EDITOR
-        void IEditorManager.OnEnteredEditMode()
-        {
-            UnloadResource();
-            DestroyFallbackRenderSprite();
-
-            InitFallbackRenderSprite();
-            foreach (var atlas in _allAtlasList)
-                atlas.ReloadResourceIfNeeded();
-        }
-#endif
-
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void AddDelayInitializeDynamicSprite(DynamicSprite dynamicSprite)
         {
@@ -110,6 +97,7 @@ namespace kuro
         private void InitFallbackRenderSprite()
         {
             var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+            texture.hideFlags = HideFlags.DontSave;
             texture.filterMode = FilterMode.Point;
             texture.wrapMode = TextureWrapMode.Clamp;
             Color[] colors = new Color[4];
